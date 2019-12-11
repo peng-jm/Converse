@@ -21,6 +21,10 @@ gulp.task('css',function(done){
 })
 gulp.task('js',function(done){
 	gulp.src('./src/js/*.js')
+	.pipe(load.babel({
+            presets: ['@babel/env']
+        }))
+	.pipe(load.uglify())
 	.pipe(gulp.dest('./dist/js/'))
 	done()
 })
