@@ -1,0 +1,121 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,input,fieldset,legend,input,textarea,select,figure,figcaption{
+	margin:0;
+	padding:0;
+}
+a{cursor:pointer;}  
+body,html{
+	font:12px "微软雅黑",Arial;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+	font-weight:normal;
+	font-size:100%;
+}
+i,em{
+	font-style:normal;
+}
+a{
+	text-decoration:none;
+	color:#606060;
+}
+li{
+	list-style:none;
+}
+input{
+	outline:none;
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	height:0;
+	overflow:hidden;
+	clear:both;
+}
+.container{
+	width: 1300px;
+	margin: auto;
+}
+#header{
+	height: 80px;
+	width: 100%;
+	background: #000;
+	z-index: 999;
+	.logo{
+		height: 80px;
+		h1{
+			width: 163px;
+			height: 80px;
+			float: left;
+			img{
+				width:163px;
+				height: 30px;
+				margin-top: 20px;
+			}
+		}
+		ul{
+			float:right;
+			box-sizing: border-box;
+			padding-top: 30px;
+			height: 80px;
+			width: 600px;
+			li{
+				float: left;
+				color: white;
+				font-size: 14px;
+				margin-right: 50px;
+				a{
+					color: white;
+					font-size: 14px;
+				}
+			}
+		}
+	}	
+}
+#form{
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	form{
+		margin-top: 100px;
+		width: 100%;
+		height: 260px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		.one{
+			width: 500px;
+			span{
+				font-size: 20px;
+			}
+			.txt{
+				width: 200px;
+				height: 20px;
+			}
+			.pass{
+				width: 200px;
+				height: 20px;
+			}
+			.ju{
+				margin-right: 5px;
+				display: inline-block;
+			}
+		}
+	}
+	.btn{
+		width: 300px;
+		height: 30px;
+		margin-left: -187px;
+	}
+}
+#box{
+	font-size: 50px;
+	color: red;
+	position: absolute;
+	top: 50%;
+	left: 580PX;
+	display: none;
+	z-index: 99;
+}
